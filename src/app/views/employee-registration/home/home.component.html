@@ -1,0 +1,123 @@
+<div class="animated fadeIn">
+  <div class="row">
+    <!-- Nav tabs -->
+    <tabset [vertical]="true" type="pills" style="background-color:aliceblue">
+      <tab heading="NIC" style="background-color:aliceblue" justify="true">
+        <div class="row">
+          <div class="col-xl-9 col-lg-9 col-md-8 col-sm-7  col-6 mb-3 mb-xl-0">
+            <img
+              src="/src/images/id.jpg"
+              style="
+                 width: 80%; padding-top:100px; padding-left: 80px"
+            />
+          </div>
+
+          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5 col-6 mb-3 mb-xl-0 ">
+            <div
+              class="  mb-3 mt-3"
+              style="display: flex; justify-content: flex-end"
+            >
+              <button
+                type="button"
+                class="btn  btn-primary btn-block"
+                float:right
+              >
+                Scan
+              </button>
+            </div>
+
+            <div
+              class="mb-3 mt-3"
+              style="display: flex; justify-content: flex-end"
+            >
+              <button type="button" class="btn  btn-primary btn-block">
+                Crop
+              </button>
+            </div>
+
+            <!-- This is ID information form -->
+            <div class="mb-3 mt-3">
+              <div class="card">
+                <div class="card-header">
+                  <strong>Identity Card</strong> information
+                </div>
+                <div class="card-body">
+                  <form action="" method="post">
+                    <div class="form-group">
+                      <label for="nf-nicno">NIC Number</label>
+                      <input
+                        type="text"
+                        id="nf-nicno"
+                        name="nf-nicno"
+                        class="form-control"
+                        placeholder="Enter NIC no.."
+                        autocomplete="000000000000V"
+                      />
+                      <span class="help-block"
+                        >Please enter NIC number shown</span
+                      >
+                    </div>
+                    <div class="form-group">
+                      <label for="nf-issdate">Isued Date</label>
+                      <input
+                        type="text"
+                        id="nf-issdate"
+                        name="nf-issdate"
+                        class="form-control"
+                        placeholder="Enter Isuued date"
+                        autocomplete="00/00/00"
+                      />
+                      <span class="help-block"
+                        >Please enter Issued date shown</span
+                      >
+                    </div>
+                  </form>
+                </div>
+                <div class="card-footer">
+                  <button type="submit" class="btn btn-sm btn-primary">
+                    <i class="fa fa-dot-circle-o"></i> Submit
+                  </button>
+                  <button type="reset" class="btn btn-sm btn-danger">
+                    <i class="fa fa-ban"></i> Reset
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="mb-3 mt-3"
+              style="display: flex; justify-content: flex-end"
+            >
+              <button type="button" class="btn  btn-primary btn-block">
+                Continue
+              </button>
+            </div>
+          </div>
+        </div>
+      </tab>
+
+      <tab heading="Birth Certificate">
+        2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum.
+      </tab>
+      <tab heading="Marriage Certificate">
+        3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum.
+      </tab>
+    </tabset>
+  </div>
+
+  <!-- /.col -->
+
+  <!-- /.row -->
+</div>
