@@ -1,0 +1,216 @@
+<div class="animated fadeIn">
+
+      <div class=card>
+        <div class="header pl-3 pt-2">
+          <strong>Configure</strong>
+          <small>ID</small>
+        </div>
+        <div class="card-body ">
+          <div class="row" >
+            <!--work flow area-->
+            <div class="col-xl-10 col-md-10">
+                <form action="" method="post" enctype="multipart/form-data" class="form-horizontal">
+                  <div class="form-group row">
+                    <label class="col-md-2 col-form-label" for="text-input">Workflow</label>
+                    <div class="col-md-10">
+                      <input type="text" id="text-input" name="text-input" class="form-control" placeholder="Text">
+                    </div>
+                  </div>
+                  </form>
+            </div>
+            <div class="col-xl-2 col-md-2">
+                <button
+                      type="button"
+                      class="btn btn-block btn-warning active "
+
+                    >Begin</button>
+            </div>
+
+             <!--Adding Segments-->
+             <div class="col-xl-2 col-md-2">
+                <button
+                      type="button"
+                      class="btn btn-block btn-primary active "
+
+                    >Add Segments</button>
+            </div>
+
+            <div class="col-xl-8 col-md-10">
+                <form action="" method="post" enctype="multipart/form-data" class="form-horizontal">
+                  <div class="form-group row">
+                    <label class="col-md-3 col-form-label" for="text-input">Segment Name</label>
+                    <div class="col-md-9">
+                      <input type="text" id="text-input" name="text-input" class="form-control" placeholder="Enter a name for your segment">
+                    </div>
+                  </div>
+                  </form>
+            </div>
+            <div class="col-xl-2 col-md-2">
+                <button
+                      type="button"
+                      class="btn btn-block btn-primary active "
+
+                    >+</button>
+            </div>
+
+            <!--Segments table-->
+            <div class="col-xl-12">
+                <div class="card">
+                    <div class="card-header">
+                      Configure ID
+                    </div>
+                    <tabset [vertical]="true" style="background-color:aliceblue">
+                    <tab heading="Nic Configuration 1" justify="true" class="col-12">
+                    <div class="row" >
+                      <div class="col-12 row" >
+                        <div style="
+                          background-color:transparent;
+                          position: relative;
+                          padding: 10px;
+                          width: 80px;
+                          height:30px;
+                      "></div>
+
+                      </div>
+                      <div class="col-xl-4 col-sm-12">
+                        <div class="12 row">
+                            <div class="col-6">
+                                <button
+                                type="button"
+                                class="btn btn-block btn-secondary active"
+                              >Scan</button>
+                            </div>
+                            <div class="col-6">
+                                <button
+                                type="button"
+                                class="btn btn-block btn-secondary active"
+                              >Crop</button>
+                            </div>
+                        </div>
+
+                          <img
+                          src="/src/images/id.jpg"
+                          style="
+                             width: 100%; padding-top:10px; padding-left:0px;padding-bottom: 10px"
+                        />
+                      </div>
+                      <div class="col-xl-4 col-sm-12">
+                          <div class="col-8">
+                              <button
+                              type="button"
+                              class="btn btn-block btn-primary active"
+                            >Add Field</button>
+                          </div>
+                          <form action="" method="post" style="padding-top: 15px" class="form-horizontal row">
+                              <div class="form-group col-6">
+                                <label for="nf-nicno">Name</label>
+                                <input
+                                  type="text"
+                                  id="name"
+                                  name="name"
+                                  class="form-control"
+                                  placeholder="Enter a name"
+                                  autocomplete="sample name"
+                                />
+
+                              </div>
+                              <div class="form-group col-6">
+                                <label for="nf-issdate">type</label>
+                                <select class="form-control" id="ccmonth">
+                                    <option>Text</option>
+                                    <option>Oral</option>
+                                  </select>
+                              </div>
+                              <div class="form-group col-3">
+                                  <label for="nf-nicno">X1</label>
+                                  <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    class="form-control"
+                                    placeholder="Enter a name"
+                                    autocomplete="sample name"
+                                  />
+                                </div>
+                                <div class="form-group col-3">
+                                    <label for="nf-nicno">Y1</label>
+                                    <input
+                                      type="text"
+                                      id="name"
+                                      name="name"
+                                      class="form-control"
+                                      placeholder="Enter a name"
+                                      autocomplete="sample name"
+                                    />
+                                  </div>
+                                  <div class="form-group col-3">
+                                      <label for="nf-nicno">X2</label>
+                                      <input
+                                        type="text"
+                                        id="name"
+                                        name="name"
+                                        class="form-control"
+                                        placeholder="Enter a name"
+                                        autocomplete="sample name"
+                                      />
+                                    </div>
+                                    <div class="form-group col-3">
+                                        <label for="nf-nicno">Y2</label>
+                                        <input
+                                          type="text"
+                                          id="name"
+                                          name="name"
+                                          class="form-control"
+                                          placeholder="Enter a name"
+                                          autocomplete="sample name"
+                                        />
+                                      </div>
+                                    </form>
+                                    <div class="col-8">
+                                        <button
+                                        type="button"
+                                        class="btn btn-block btn-primary active"
+                                      >Add Field</button>
+                                    </div>
+
+                      </div>
+                            <!--Data table-->
+                          <div class="col-xl-4">
+                            <div class="col-xl-12 card">
+                                <div class="card-header">
+                                    <h5> Data Table</h5>
+                                </div>
+                                   <div class="card-body"  style="background-color:beige">
+                                      <table class="table" [mfData]="data | dataFilter : filterQuery" #mf="mfDataTable" [mfRowsOnPage]="10" >
+                                        <thead>
+                                          <tr>
+                                            <th style="width: 50%">
+                                              <mfDefaultSorter by="name">Name</mfDefaultSorter>
+                                            </th>
+                                            <th style="width: 50%">
+                                              <mfDefaultSorter by="email">Email</mfDefaultSorter>
+                                            </th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr *ngFor="let item of mf.data">
+                                            <td>{{item.name}}</td>
+                                            <td>{{item.email}}</td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+                              </div>
+                            </div>
+                    </div>
+                  </tab>
+                  </tabset>
+                    </div>
+                  </div>
+              </div>
+
+          </div>
+     </div>
+
+    </div>
+

@@ -14,7 +14,12 @@ export const navItems = [
   },
   {
     name: 'Registration',
-    url: '/employee',
+    url: '/employee/home',
     icon: 'icon-user-follow'
+  },
+  {
+    name: 'ID Config',
+    url: '/employee/idconfig',
+    icon: 'icon-crop'
   }
 ];
